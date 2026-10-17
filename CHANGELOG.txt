@@ -15,6 +15,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     paramiko 4; needs checking what else changed across 4.x/5.x before lifting it.
 
 ## [Unreleased]
+### Fixed
+  - Raise the `[build-system]` floor from `setuptools>=61.0` to `setuptools>=77`. The
+    `license = "MIT"` SPDX string (PEP 639) needs setuptools 77+, so building the sdist with an
+    older setuptools and build isolation off failed with an opaque `project.license must be valid
+    exactly by one definition` error (https://github.com/octopus-energy/tentaclio/pull/251).
 
 ## [1.5.1] - 2026-08-05
 ### Fixed
