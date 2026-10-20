@@ -159,9 +159,9 @@ workflows:
   test-build-deploy:
     jobs:
       - lint:
-        filters:
-          tags:
-            only: /.*/
+          filters:
+            tags:
+              only: /.*/
       - unit:
           matrix:
             parameters:
