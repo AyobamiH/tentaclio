@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Tentaclio (`src/tentaclio/`) unifies stream I/O (`tentaclio.open`), db connections (`tentaclio.db`), and credential injection behind URL strings, so callers can swap `file://`, `ftp://`, `sftp://`, `s3://`, `postgresql://`, etc. without changing code. Extra schemes (s3, gs, gdrive, postgres, athena, databricks, snowflake) ship as separate `tentaclio_*` plugin packages, auto-discovered and imported at import time (`clients/importer.py::import_tentaclio_plugins`) via `importlib.metadata.packages_distributions()` — a plugin just needs to be pip-installed to register itself.
 
-Package manager is `uv`. Python >=3.10, must support 3.10–3.13.
+Package manager is `uv`. Python >=3.11, must support 3.11–3.15.
 
 ## Commands
 
