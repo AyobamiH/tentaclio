@@ -5,6 +5,7 @@ description = "Unification of data connectors for distributed data tasks"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
+license-files = ["LICENSE.txt"]
 authors = [
     { name = "Octopus Energy", email = "nerds@octopus.energy" }
 ]
