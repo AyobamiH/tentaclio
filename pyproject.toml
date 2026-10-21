@@ -95,8 +95,6 @@ fallback_version = "0.0.0"
 
 [tool.uv]
 package = true
-exclude-newer = "14 days"
-exclude-newer-package = { certifi = false }
 
 [[tool.uv.index]]
 name = "pypi"
