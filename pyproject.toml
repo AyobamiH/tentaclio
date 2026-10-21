@@ -31,7 +31,7 @@ dependencies = [
     # HTTP
     "requests",
     # SQLAlchemy
-    "sqlalchemy>=1.4",
+    "sqlalchemy>=1.4,<2.1",
     # SFTP
     "paramiko>=3.4.0,<4.0.0",
     # Utils

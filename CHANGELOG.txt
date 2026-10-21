@@ -20,6 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
   - Bump the minimum supported Python from 3.10 (EOL) to 3.11.
   - Add support for Python 3.15.
+  - Pin sqlalchemy to `<2.1` due to slow release of wheels on new releases.
 ### Fixed
   - Raise the `[build-system]` floor from `setuptools>=61.0` to `setuptools>=77`. The
     `license = "MIT"` SPDX string (PEP 639) needs setuptools 77+, so building the sdist with an
