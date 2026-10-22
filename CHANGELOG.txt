@@ -16,9 +16,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [1.6.1] - 2026-10-22
+## [1.6.1] - 2026-10-23
 ### Changed
   - Support PEP 740 attestations when publishing releases to PyPI.
+### Fixed
+  - Remove redundant `wheel` specification in `build-system.requires` (pyproject.toml).
+  - Trigger docs GitHub Actions workflow on changes to Makefile, README.md, pyproject.toml or
+    uv.lock.
+### Security
+  - Pin GitHub Actions to commit hashes instead of potentially mutable tags.
+  - Isolate OIDC token access from uv build step in release GitHub actions workflow.
+  - Ensure trusted publishing is available for publishing to PyPI.
+  - Upgrade to latest CircleCI cimg/python Docker images and pin to sha256 hashes.
+  - Install uv 0.13.5 explicitly in CircleCI executors as cimg/python:3.11 & cimg/python:3.12 are
+    not patched yet for CA certs security issue.
+
 
 ## [1.6.0] - 2026-10-20
 ### Changed
