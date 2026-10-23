@@ -99,7 +99,7 @@ commands:
             uv --version
       - run:
           name: Install Python packages
-          command: make sync
+          command: uv sync --locked
       - save_cache:
           key: virtualenv-<< parameters.python-version >>-{{ .Environment.CACHE_VERSION }}-{{ .Branch }}-{{ checksum "uv.lock" }}
           paths:
