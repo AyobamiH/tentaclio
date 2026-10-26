@@ -15,6 +15,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     paramiko 4; needs checking what else changed across 4.x/5.x before lifting it.
 
 ## [Unreleased]
+### Changed
+  - Removed separate uv install step in CircleCI as latest cimg/python:3.11 & cimg/python:3.12
+    contain latest uv & pip versions
 
 ## [1.6.1] - 2026-10-23
 ### Changed
@@ -30,7 +33,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   - Upgrade to latest CircleCI cimg/python Docker images and pin to sha256 hashes.
   - Install uv 0.13.5 explicitly in CircleCI executors as cimg/python:3.11 & cimg/python:3.12 are
     not patched yet for CA certs security issue.
-
 
 ## [1.6.0] - 2026-10-20
 ### Changed
